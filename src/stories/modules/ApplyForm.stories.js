@@ -1,5 +1,5 @@
 import React from "react";
-import ApplyForm from "../../modudles/ApplyForm";
+import ApplyForm from "../../modules/ApplyForm";
 
 const defaultProps = {
   title: "Title",

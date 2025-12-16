@@ -1,18 +1,33 @@
 # Component Collection
 
-This poroject is a collection of some interactive UI components and modules I've created during my jorney as a Frontend developer working on Design System of [Griddo CMS](https://griddo.io/). This collection is a work in progress and it's going to grow and improve.
+A React component library and a set of interactive modules documented in Storybook.
+Originally created as part of a design system for the [Griddo](https://griddo.io/) platform.
 
-This project was created using [Create React App](https://github.com/facebook/create-react-app), [Storybook](https://storybook.js.org/) and [CSSModules](https://github.com/css-modules/css-modules)
+## What it is
 
-## Available Scripts
+This repository is a showcase of:
 
-For install dependecies, you can run:
+- **Atomic UI components** (buttons, inputs, selects, cards, messages)
+- **Composed modules** built from those components (e.g. multi-step form, accordion, carousel, sticky anchors)
+- A **Storybook-first** workflow for development and documentation
 
-### `yarn`
+## Key features
 
-For run the Storybook, you can run:
+- **Storybook as the primary UI** for browsing and testing components
+- **CSS Modules + SCSS** for scoped styles and theming via CSS custom properties
+- **Complex form flow** using `react-hook-form` (validation, multi-step UX, dynamic fields)
+- **Animations** with `framer-motion`
+- Clear separation: `components/` (atomic) vs `modules/` (composed features)
 
-### `yarn storybook`
+## Links
 
-Runs the app in the development mode.\
-Open [http://localhost:6006](http://localhost:6006) to view it in your browser.
+- **Live Storybook (GitHub Pages):** https://mariiabadanina.github.io/component-collection/
+- **Repository:** https://github.com/MariiaBadanina/component-collection
+
+## Local development
+
+Install dependencies:
+
+```bash
+yarn
+```

@@ -1,6 +1,6 @@
 {
   "name": "components-collection",
-  "homepage": "https://mariabadanina.github.io/component-collection/",
+  "homepage": "https://mariiabadanina.github.io/component-collection/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,7 +36,7 @@
           "**/*.stories.*"
         ],
         "rules": {
-          "import/no-anonymous-default-export": "on"
+          "import/no-anonymous-default-export": "off"
         }
       }
     ]

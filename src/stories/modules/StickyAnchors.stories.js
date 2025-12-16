@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import StickyAnchors from "../../modudles/StickyAnchors";
+import StickyAnchors from "../../modules/StickyAnchors";
 import MaxWidth from "../../components/MaxWidth";
 
 const studyMenuOptions = Array(8)

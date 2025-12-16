@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from "../../modudles/Accordion";
+import Accordion from "../../modules/Accordion";
 
 const elements = Array(5)
   .fill(0)

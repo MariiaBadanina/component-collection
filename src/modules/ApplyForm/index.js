@@ -1,10 +1,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
 import { useForm } from "react-hook-form";
-import Button from "../../components/Button";
-import ConfirmationMessage from "../../components/ConfirmationMessage";
-import MaxWidth from "../../components/MaxWidth";
-import { useWindowResize } from "../../hooks/useWindowResize";
+import Button from "../../components/Button/index.js";
+import ConfirmationMessage from "../../components/ConfirmationMessage/index.js";
+import MaxWidth from "../../components/MaxWidth/index.js";
+import { useWindowResize } from "../../hooks/useWindowResize.js";
 import FirstStep from "./FirstStep/index.js";
 import SecondStep from "./SecondStep/index.js";
 import styles from "./styles.module.scss";

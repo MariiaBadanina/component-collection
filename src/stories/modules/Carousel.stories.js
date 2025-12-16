@@ -1,5 +1,5 @@
 import * as React from "react";
-import Carousel from "../../modudles/Carousel";
+import Carousel from "../../modules/Carousel";
 
 const elements = Array(5)
   .fill(0)
