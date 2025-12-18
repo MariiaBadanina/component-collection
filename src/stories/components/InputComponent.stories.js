@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import { AnimatePresence, motion } from "framer-motion";
-import Button from "../../components/Button/";
-import InputComponent from "../../components/InputComponent";
-import ConfirmationMessage from "../../components/ConfirmationMessage";
+import React, { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { AnimatePresence, motion } from 'framer-motion'
+import Button from '../../components/Button/'
+import InputComponent from '../../components/InputComponent'
+import ConfirmationMessage from '../../components/ConfirmationMessage'
 
 export const Base = () => {
   const {
@@ -12,26 +12,26 @@ export const Base = () => {
     formState: { errors },
     reset,
   } = useForm({
-    mode: "onChange",
-  });
-  const [sent, setSent] = useState(false);
+    mode: 'onChange',
+  })
+  const [sent, setSent] = useState(false)
   const onSubmit = (data) => {
-    setSent(true);
-    alert(JSON.stringify(data));
-  };
+    setSent(true)
+    alert(JSON.stringify(data))
+  }
 
   return (
     <div
       style={{
-        height: "100vh",
-        background: "var(--ui02)",
-        padding: "var(--spc-4xl)",
+        height: '100vh',
+        background: 'var(--ui02)',
+        padding: 'var(--spc-4xl)',
       }}
     >
       <div
         style={{
-          maxWidth: "400px",
-          margin: "0 auto",
+          maxWidth: '400px',
+          margin: '0 auto',
         }}
       >
         {sent ? (
@@ -54,20 +54,20 @@ export const Base = () => {
               register={register}
               error={errors}
               required={{
-                required: "This field is required",
+                required: 'This field is required',
                 minlength: 1,
                 maxlength: 128,
                 pattern: {
                   value: /^([a-zA-ZÀ-ÿẞ])+(([ ]([a-zA-ZÀ-ÿẞ])+)+)?$/,
-                  message: "Introduce a valid name",
+                  message: 'Introduce a valid name',
                 },
               }}
             />
             <div
               style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end",
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-end',
               }}
             >
               <Button
@@ -81,14 +81,20 @@ export const Base = () => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default {
-  title: "Components/InputComponent",
+  title: 'Components/InputComponent',
   parameters: {
+    docs: {
+      description: {
+        component:
+          'Reusable input component designed for form-heavy CMS interfaces. Supports validation states and is intended to be used together with react-hook-form. Serves as a base form primitive across composed modules.',
+      },
+    },
     options: {
       showPanel: false,
     },
   },
-};
+}

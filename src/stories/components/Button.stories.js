@@ -1,28 +1,28 @@
-import * as React from "react";
-import Button from "../../components/Button/index";
-import { useWindowResize } from "../../hooks/useWindowResize";
+import * as React from 'react'
+import Button from '../../components/Button/index'
+import { useWindowResize } from '../../hooks/useWindowResize'
 
 export const Base = () => {
-  const windowWidth = useWindowResize();
+  const windowWidth = useWindowResize()
 
   return (
     <div
       style={{
-        background: "var(--ui02)",
-        padding: "var(--spc-m) var(--spc-xxl)",
-        display: "flex",
-        flexDirection: windowWidth < 1024 ? "column" : "row",
-        alignItems: "center",
-        textAlign: "center",
-        justifyContent: "center",
+        background: 'var(--ui02)',
+        padding: 'var(--spc-m) var(--spc-xxl)',
+        display: 'flex',
+        flexDirection: windowWidth < 1024 ? 'column' : 'row',
+        alignItems: 'center',
+        textAlign: 'center',
+        justifyContent: 'center',
       }}
     >
       <div
         style={{
-          margin: "var(--spc-xs)",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          margin: 'var(--spc-xs)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
       >
         <Button
@@ -38,10 +38,10 @@ export const Base = () => {
       </div>
       <div
         style={{
-          margin: "var(--spc-xs)",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          margin: 'var(--spc-xs)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
       >
         <Button
@@ -57,10 +57,10 @@ export const Base = () => {
       </div>
       <div
         style={{
-          margin: "var(--spc-xs)",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          margin: 'var(--spc-xs)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
       >
         <Button
@@ -76,10 +76,10 @@ export const Base = () => {
       </div>
       <div
         style={{
-          margin: "var(--spc-xs)",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
+          margin: 'var(--spc-xs)',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
         }}
       >
         <Button
@@ -90,15 +90,21 @@ export const Base = () => {
         <Button appearance="link" buttonText="Link disabled" disabled />
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default {
-  title: "Elements/Buttons",
+  title: 'Elements/Buttons',
   parameters: {
-    layout: "fullscreen",
+    docs: {
+      description: {
+        component:
+          'Reusable button component designed for a CMS design system. Supports multiple visual variants and disabled states. Styling is handled via CSS Modules and CSS custom properties to enable theming without runtime style generation. Intended to be used as a base primitive across composed modules.',
+      },
+    },
+    layout: 'fullscreen',
     options: {
       showPanel: false,
     },
   },
-};
+}

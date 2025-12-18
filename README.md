@@ -18,6 +18,7 @@ This repository is a showcase of:
 - **Complex form flow** using `react-hook-form` (validation, multi-step UX, dynamic fields)
 - **Animations** with `framer-motion`
 - Clear separation: `components/` (atomic) vs `modules/` (composed features)
+- Accessibility improvements are planned next (button semantics + aria attributes).
 
 ## Links
 

@@ -1,10 +1,10 @@
-import React, { useState } from "react";
-import { useForm } from "react-hook-form";
-import { AnimatePresence, motion } from "framer-motion";
-import Button from "../../components/Button/";
-import SelectComponent from "../../components/SelectComponent";
-import ConfirmationMessage from "../../components/ConfirmationMessage";
-import countriesList from "../../constants/countriesList";
+import React, { useState } from 'react'
+import { useForm } from 'react-hook-form'
+import { AnimatePresence, motion } from 'framer-motion'
+import Button from '../../components/Button/'
+import SelectComponent from '../../components/SelectComponent'
+import ConfirmationMessage from '../../components/ConfirmationMessage'
+import countriesList from '../../constants/countriesList'
 
 export const Base = () => {
   const {
@@ -13,27 +13,27 @@ export const Base = () => {
     formState: { errors },
     reset,
   } = useForm({
-    mode: "onChange",
-  });
-  const [sent, setSent] = useState(false);
-  const [countryValue, setCountryValue] = useState(null);
+    mode: 'onChange',
+  })
+  const [sent, setSent] = useState(false)
+  const [countryValue, setCountryValue] = useState(null)
   const onSubmit = (data) => {
-    setSent(true);
-    alert(JSON.stringify(data));
-  };
+    setSent(true)
+    alert(JSON.stringify(data))
+  }
 
   return (
     <div
       style={{
-        height: "100vh",
-        background: "var(--ui02)",
-        padding: "var(--spc-4xl)",
+        height: '100vh',
+        background: 'var(--ui02)',
+        padding: 'var(--spc-4xl)',
       }}
     >
       <div
         style={{
-          maxWidth: "400px",
-          margin: "0 auto",
+          maxWidth: '400px',
+          margin: '0 auto',
         }}
       >
         {sent ? (
@@ -63,9 +63,9 @@ export const Base = () => {
             />
             <div
               style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "flex-end",
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'flex-end',
               }}
             >
               <Button
@@ -79,14 +79,20 @@ export const Base = () => {
         )}
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default {
-  title: "Components/SelectComponent",
+  title: 'Components/SelectComponent',
   parameters: {
+    docs: {
+      description: {
+        component:
+          'Custom select component built for controlled form environments. Designed to handle predefined option sets and validation states within CMS forms. Used as a base primitive in complex form flows.',
+      },
+    },
     options: {
       showPanel: false,
     },
   },
-};
+}

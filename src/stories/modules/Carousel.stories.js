@@ -1,5 +1,5 @@
-import * as React from "react";
-import Carousel from "../../modules/Carousel";
+import * as React from 'react'
+import Carousel from '../../modules/Carousel'
 
 const elements = Array(5)
   .fill(0)
@@ -10,16 +10,22 @@ const elements = Array(5)
       quote:
         '"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dignissim ut nibh eget porttitor."',
     },
-  }));
+  }))
 
-export const Base = () => <Carousel elements={elements} />;
+export const Base = () => <Carousel elements={elements} />
 
 export default {
-  title: "Modules/Carousel",
+  title: 'Modules/Carousel',
   parameters: {
-    layout: "fullscreen",
+    docs: {
+      description: {
+        component:
+          'Carousel module designed to present grouped content blocks within CMS pages. Focuses on controlled navigation and layout behavior rather than visual effects. Represents a reusable content presentation pattern.',
+      },
+    },
+    layout: 'fullscreen',
     options: {
       showPanel: false,
     },
   },
-};
+}
